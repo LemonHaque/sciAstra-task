@@ -1,5 +1,6 @@
-
+import { FaTelegramPlane } from "react-icons/fa";
 import { useEffect, useState } from "react";
+
 
 
 const MeetYourMentor = () => {
@@ -14,27 +15,30 @@ const MeetYourMentor = () => {
 
     return (
         <div className='text-center'>
-            <h1 className='text-5xl font-bold'>Meet Your Mentor</h1>
+            <h1 className='text-4xl font-bold text-indigo-700'>Meet Your Mentor</h1>
 
-           <div className="grid md:grid-cols-2 lg:grid-cols-3 mx-auto sm:w-3/5 md:w-4/5 gap-4">
-           {
-                mentorsData.map(singleData => (
-                    <div key={singleData.id}>
-                        <div className="card card-compact bg-base-100 shadow-xl">
-                            <figure><img src={singleData.img} alt="Shoes" /></figure>
-                            <div className="card-body">
-                                <h2 className="card-title">{singleData.name}</h2>
-                                <p>{singleData.university}</p>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto gap-3 my-10">
+                {
+                    mentorsData.map(singleData => (
+                        <div key={singleData.id}>
+                            <div className="my-3">
+                                <img className="w-1/2 rounded-full mx-auto" src={singleData.img} alt="Mentor" />
                                 <div className="">
-                                    <button className="btn btn-outline">Message</button>
+                                    <h2 className="text-center text-xl">{singleData.name}</h2>
+                                    <p>{singleData.university}</p>
+                                    <button className="flex w-1/2 mx-auto items-center rounded-2xl px-2 py-1 border-2 border-purple-800 text-purple-800 hover:bg-purple-800 hover:text-white">
+                                        Message him now
+                                        <span className="ml-2"><FaTelegramPlane /></span>
+                                    </button>
+
+
                                 </div>
                             </div>
                         </div>
-                    </div>
-                )
-                )
-            }
-           </div>
+                    )
+                    )
+                }
+            </div>
         </div>
     );
 };

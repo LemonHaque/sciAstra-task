@@ -1,20 +1,44 @@
 [
     {
         "id": 1,
-        "img": "profile1.jpg",
-        "name": "John Doe",
+        "img": "https://i.ibb.co/HP712FQ/Parth-Singh.webp",
+        "name": "Parth Singh",
         "university": "University of Example"
     },
     {
         "id": 2,
-        "img": "profile2.jpg",
-        "name": "Jane Smith",
+        "img": "https://i.ibb.co/jyC0H21/Mandar-Tornekar-chemistry.webp",
+        "name": "Mandar Tornekar",
         "university": "Another University"
     },
     {
         "id": 3,
-        "img": "profile3.jpg",
-        "name": "Alex Johnson",
+        "img": "https://i.ibb.co/3WZpWmR/Sehasree-Mohanta.webp",
+        "name": "Sehasree Mohanta",
+        "university": "Some University"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/ZHLHXZ7/Siddharth-Bhatt-physics.webp",
+        "name": "Siddharth Bhatt",
+        "university": "Some University"
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/Stj7yXH/Piyush-Verma-biology.webp",
+        "name": "Piyush Verma",
+        "university": "Some University"
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/BsHvPSc/Saumya-Sharma-mathematics.webp",
+        "name": "Saumya Sharma",
+        "university": "Some University"
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/dtCCGyN/Saumya-Shisodiya-mathematics.webp",
+        "name": "Saumya Shisodiya",
         "university": "Some University"
     }
 ]
